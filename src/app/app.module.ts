@@ -9,6 +9,7 @@ import { TenantsMasterListComponent } from './tenants-master-list/tenants-master
 import { FinanceMasterListComponent } from './finance-master-list/finance-master-list.component';
 import { ReportsListComponent } from './reports-list/reports-list.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { appRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     ErrorPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    appRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
