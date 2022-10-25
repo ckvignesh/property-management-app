@@ -11,6 +11,8 @@ import { ReportsListComponent } from './reports-list/reports-list.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
 import { appRoutingModule } from './app.routing';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { appRoutingModule } from './app.routing';
     TenantsMasterListComponent,
     FinanceMasterListComponent,
     ReportsListComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    SettingsPageComponent,
+    LogoutComponent
   ],
   imports: [BrowserModule, appRoutingModule],
   providers: [],
