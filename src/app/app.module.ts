@@ -9,7 +9,9 @@ import { TenantsMasterListComponent } from './tenants-master-list/tenants-master
 import { FinanceMasterListComponent } from './finance-master-list/finance-master-list.component';
 import { ReportsListComponent } from './reports-list/reports-list.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
 import { appRoutingModule } from './app.routing';
+import { LogoutPageComponent } from './logout-page/logout-page.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,12 @@ import { appRoutingModule } from './app.routing';
     TenantsMasterListComponent,
     FinanceMasterListComponent,
     ReportsListComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    SettingsPageComponent,
+    LogoutPageComponent,
   ],
-  imports: [
-    BrowserModule,
-    appRoutingModule
-  ],
+  imports: [BrowserModule, appRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
